@@ -1,0 +1,57 @@
+
+ /* wish */
+ #wish .wrap{justify-content:flex-start; margin:30px;}
+ 
+ .movie_poster {
+    margin-bottom: 5px;
+    width: calc(270px - 30%);
+    height: 312px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+ /* 포스터 이미지 사이즈 조정 */
+ .movie_poster img{display: block; width: 100%;} 
+
+ .movie_wrap{
+    width:250px;
+    width: 25%;
+}
+ .middle_wrap{
+    padding: 0 10px;
+    width: 75%;
+  
+ }
+ .moive_info{
+     padding-top:10px;
+ }
+ .overview{
+    height:180px;
+    padding: 10px 0px; 
+
+ }
+.button{
+    margin-bottom:40px; 
+}
+
+#wishform >button{
+    width: 140px;
+    height: 50px;
+    font-size:16px;
+    color:var(--white-color);
+    line-height: 10px;
+    text-align: center;
+    background-color: rgba(0,0,0,0);
+    border: 0;
+    border-radius: 30px;
+    background-color: #B983FF;   
+}
+
+.button >#wishform >button >i{
+    margin-right: 5px;
+}
+
+.empty_movie_wrap{
+margin-top: 30px;
+height: 300px;
+
+}

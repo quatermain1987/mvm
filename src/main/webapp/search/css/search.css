@@ -1,0 +1,207 @@
+*{margin: 0; padding: 0;}
+
+
+#movie_wrap{
+  padding: 5px;
+}
+
+/* swiper */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background-color: #111;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  object-fit: cover;
+  width: 218px;
+  height: 320px;
+  border-radius: 8px;
+}
+
+.swiper-slide span {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  padding-top: 5px;
+  overflow: hidden;
+  height: 24px;
+  /*border: 1px solid red;*/
+}
+
+.forResultNone{
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  padding: 50px;
+  /*border: 1px solid red;*/
+}
+
+/* movie_list */
+.movie_list_wrap{
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content:space-between; */
+}
+
+.movie_list>a{
+  display: flex;
+  align-items: center;
+  width: 280px;
+  height: 120px;
+  /* flex: 1; */
+  margin: 5px 5px 10px 5px;
+  /*border: 1px solid #ccc;*/
+}
+
+.movie_list img , .poster_wrap{
+  width: 80px;
+  height: 112px;
+  border-radius: 4px;
+}
+
+.movie_list span{
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  padding: 2px 10px;
+  /*border: 1px solid red;*/
+}
+.movie_list span:first-child{
+  font-size: 14px;
+}
+.movie_list span:last-child{
+  color: #999;
+}
+
+.movie_list_for{
+  font-size: 16px;
+  font-weight: bold;
+  margin: 15px 0px 5px 0px
+  
+}
+.forMore{
+  text-align: center;
+}
+.more{
+    
+    margin: 6px;
+    padding: 8px 50px;
+    
+    text-align: center;
+    position: relative;
+
+    border-radius: 10px;
+
+    background-color: #f5f5f7;
+    color: #111;
+
+    cursor: pointer;
+    
+}
+.more:hover{
+  color: #B983FF;
+}
+
+
+
+/* psh template */
+
+
+*{margin: 0; padding: 0; box-sizing: border-box; font-size: 12px;}
+*::before,*::after{margin: 0; padding: 0; box-sizing: border-box;}
+ul,ol,li{list-style: none;}
+a{text-decoration: none; color: white;}
+i{color: white;}
+.content{width:100%; padding: 100px 0;}
+.content .wrap{display: flex; flex-flow: row wrap; justify-content: space-between;}
+.inner{width: 1170px; margin: 0 auto;}
+#header,#footer{min-width: 1200px;}
+@media screen and(max-width: 1200px){
+    .content{padding: 120px 40px;}
+}
+@media screen and(max-width: 768px){
+    .content{padding: 80px 40px;}
+}
+@media screen and(max-width: 640px){
+    .content{padding: 60px 20px;}
+}
+
+/* header 
+
+#fix{
+  width: 100%;
+  position: fixed;
+  z-index: 9999; 
+  background-color: #111;
+  border-bottom: 0.1px solid #999;
+}
+#header .inner{}
+#gnb{height:60px; display: flex; justify-content: space-between; align-items: center;}
+#gnb .logo{display: block; font: bold 18px 'inherit'; color: #6d34ce;}
+#gnb .middle{display: flex; justify-content: center; align-items: center; width: 400px; height: 35px; background-color: #f5f5f7; border-radius: 30px;}
+#gnb .search{margin-right: 5px; width: 340px; height: 25px; border: none; background-color: #f5f5f7;}
+#gnb .search:active{outline: none;}
+#gnb .search:focus{outline: none;}
+#gnb .search_icon{
+    display: inline-block; color: #888; cursor: pointer;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 40
+}
+#gnb .login{}
+#gnb .login_icon{
+    display: block; color: white;
+    font-size: 35px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 40
+}
+*/
+
+/* footer */
+#footer{padding: 30px 30px; clear: both;}
+#footer .inner{}
+.left_footer{}
+.left_footer .logo>a{display: block; font: bold 18px/30px 'inherit'; color: #B983FF;}
+.left_footer .sns{display: flex; justify-content: center;}
+.left_footer .sns li{}
+.left_footer .sns li>a{display: block; color: #999;} 
+.right_footer{font-size: 13px; color: #666;}
+#footer_gnb{display: flex;}
+#footer_gnb>li:nth-of-type(even){margin: 0 15px;}
+#footer_gnb>li>a{display: block; color: #999;}
+#footer_gnb p{
+  color: #111;
+}
+
+.banner{
+  height: 70px;
+}

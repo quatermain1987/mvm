@@ -1,0 +1,21 @@
+/* header */
+#header{position: relative; z-index: 5; background: linear-gradient(to bottom, rgba(2, 4, 10, 0.373) 0%,rgba(0, 0, 0, 0) 100%);}
+#gnb{height: 60px; display: flex; justify-content: space-between; align-items: center;}
+#gnb .logo{display: block; font: bold 22px 'inherit'; color: #fff;}
+#gnb .middle{display: flex; justify-content: center; align-items: center; width: 400px; height: 35px; background-color: rgba(0, 0, 0, 0.1); border: 1px solid rgba(255, 255, 255, 0.25); border-radius: 30px;}
+#gnb .search{margin-right: 10px; width: 340px; height: 24px; border: none; background-color: transparent; color: rgba(255, 255, 255); caret-color: #fff;}
+#gnb .search:active{outline: none;}
+#gnb .search:focus{outline: none;}
+#gnb .search::placeholder{color: rgba(255, 255, 255);}
+#gnb .search_icon{display: inline-block; color: rgba(255, 255, 255); cursor: pointer; font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 40}
+#gnb .login_icon{display: block; color: rgba(255, 255, 255, 0.8); font-size: 32px; font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 40}
+.mymenu{position: relative;}
+.mymenu .mymenu_btn{border: 0; background-color: transparent;}
+.mymenu .mymenu_btn .mymenu_pic{width: 35px; height: 35px; border-radius: 100%; overflow: hidden;}
+.mymenu .mymenu_btn .mymenu_pic > img{display: block; width: 100%;}
+.mymenu .mymenu_sub{display: none; position: absolute; right: 0; top: 38px; width: 150px; background-color: #1c1d1f; border-radius: 5px; transition: 0.3s;}
+.mymenu_sub>ul>li{position: relative; margin-bottom: 5px;}
+.mymenu_sub>ul>li:hover{background-color: #2f2f2f;}
+.mymenu_sub>ul>li:first-of-type{margin-top: 3px;}
+.mymenu_sub>ul>li:last-of-type::after{content: none;}
+.mymenu_sub>ul>li>a{display: block; font-size: 14px; line-height: 38px; color: #ffffffec; text-indent: 20px;}

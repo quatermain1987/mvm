@@ -1,0 +1,206 @@
+
+article>section
+{
+    overflow: hidden;
+}
+
+.fa-search{
+    cursor: pointer;
+}
+.review_summary
+{
+	width:100%;
+}
+
+#review_empty
+{
+	height: 400px;
+	display: flex;
+	justify-content: space-around;
+    align-items: center;
+	text-align: center;
+	background-color: var(--thema-light-gray-color);
+}
+.summary_container
+{
+	display: flex;
+	justify-content: space-evenly;
+    align-items: center;
+	background-color: var(--thema-light-gray-color);
+	box-shadow: var(--thema-box-shadow);
+	border-radius: 10px;
+	height: 150px;
+	width:100%;
+	margin-top: 10px;
+	transition: 0.3s;
+}
+.summary_container:hover
+{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.02);
+	transition: 0.3s;
+}
+.summary_container > div
+{
+	width: 100px;
+	font-weight: 500; 
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.summary_container > div > .review_total_sum,.review_total_rate
+{
+	font-size: 60px;
+	font-weight: 500;
+}
+.summary_container > div.review_rate > #review_genre_1 #review_genre_2 #review_genre_3
+{
+	font-size: 10px;
+}
+.summary_container > div.review_rate > #review_rate_1
+{
+	font-size: 60px;
+	font-weight: 1000;
+}
+.summary_container > div.review_rate > #review_rate_2, #review_rate_3
+{
+	font-size: 60px;
+	font-weight: 500;
+}
+
+.wrap_search{
+    display: flex;
+    margin-top: 10px;
+}
+.search_box{
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-left: auto;
+    transition: 0.3s;
+}
+.search_box:hover{
+	transform: scale(1.3);
+    transform-origin: right;
+    transition: 0.3s;
+}
+.search_box>input{
+    width: 0px;
+    height: 40px;
+    border: 0px solid;
+    transition: 0.3s;
+    color:var(--black-color);
+}
+.search_box>input:focus{
+    width: 200px;
+    transform-origin: 0% 0%;
+    transition: 0.3s;
+}
+
+.wrap_review {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    margin-top: 10px;
+    height: 350px;
+}
+.review_card {
+    background: var(--thema-light-gray-color);
+    border-radius: 10px;
+    width: 31.3%;
+    height:350px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    text-overflow: ellipsis;
+    margin-bottom: 30px;
+}
+.review_card:nth-child(3n+2) {
+    margin:0 3%;
+}
+.review_card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.02);
+}
+.user_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.user_picture {
+    border: 1px solid var(--black-color);
+    width:var(--avatar-size);
+    height:var(--avatar-size);
+    border-radius:50%;
+    position: relative;
+    top:5px; left: 7px;
+}
+.nickname {
+    position: relative;
+    top: -16px; left:10px;
+}
+.grade_wrap {
+    display: flex;
+    justify-content: space-between;
+    padding:5px 0; margin: 3px 20px;
+    width: 90%
+}
+.dropdown {
+    display: inline-block;
+}
+
+.more> i {
+    margin-right: 15px;
+    font-size: var(--font-large);
+}
+.more {
+    display: inline-block;
+    border: none;
+}
+.submenu {
+    display: none;
+    border: 0.5px solid var(--gray-dark-color);
+    border-radius: 5px;
+    background: var(--white-color);
+    font-size: var(--font-medium);
+    padding: 10px; color: var(--black-color);
+}
+.modi.active, .del.active {
+    display: block;
+}
+
+.star {
+    border-radius: 30px;
+    background-color: #3d3d3d;
+    padding: 1px 5px;
+    font-size: var(--font-medium);
+    color:var(--white-color);
+}
+.fa-star:before {
+    content: "\f005";
+}
+.content_wrap {
+    align-self: center;
+    margin: 5px 20px;
+    width: 85%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 9; /*리뷰 글 9줄 제한*/
+    overflow: hidden;
+    color:lightgray;
+}
+.bottom_wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: auto; margin-top: auto;
+    margin-left: 20px; margin-right: 20px;
+}
+
+.review_container{
+	width:100%;
+    background: var(--thema-gray-color);
+    border-radius: 10px;
+    padding-top:100px;
+    text-align: center;
+}

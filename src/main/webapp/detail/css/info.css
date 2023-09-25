@@ -1,0 +1,136 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+*::before,*::after{margin: 0; padding: 0; box-sizing: border-box;}
+ul,ol,li{list-style: none;}
+a {text-decoration: none; color: inherit;}
+.content{width:100%; padding: 30px 0;}
+.content .wrap{display: flex; flex-flow: row wrap; justify-content: space-between;}
+.inner{width: 1170px; margin: 0 auto;}
+body{background-color: rgba(2, 4, 10);
+   color:var(--white-color);}
+@media screen and(max-width: 1200px){
+    .content{padding: 120px 40px;}
+    .inner{width: 100%;}
+}
+@media screen and(max-width: 768px){
+    .content{padding: 80px 40px;}
+}
+@media screen and(max-width: 640px){
+    .content{padding: 60px 20px;}
+}
+.title{margin-bottom: 10px; font-size: 28px;}
+
+:root{
+    /* 색상 */
+    --white-color:#f0f6fc;
+    --black-color:#140a00;
+    --blue-color:#045fd4;
+    --red-color:#ff0000;
+    --gray-dark-color:#909090;
+    --gray-light-color:#e0e0e0;
+    
+    /* 사이즈 */
+    --padding: 12px;
+    --avatar-size:36px;
+    
+    /* 폰트사이즈*/
+    --font-large: 16px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-micro: 10px;
+    }
+    
+
+/* header */
+#header{background: linear-gradient(to bottom, rgba(2, 4, 10, 0.373) 0%,rgba(0, 0, 0, 0) 100%);}
+#gnb{height: 60px; display: flex; justify-content: space-between; align-items: center;}
+#gnb .logo{display: block; font: bold 22px 'inherit'; color: #fff;}
+#gnb .middle{display: flex; justify-content: center; align-items: center; width: 400px; height: 35px; background-color: rgba(0, 0, 0, 0.1); border: 1px solid rgba(255, 255, 255, 0.25); border-radius: 30px;}
+#gnb .search{margin-right: 10px; width: 340px; height: 24px; border: none; background-color: transparent; color: rgba(255, 255, 255);}
+#gnb .search:active{outline: none;}
+#gnb .search:focus{outline: none;}
+#gnb .search::placeholder{color: rgba(255, 255, 255);}
+#gnb .search_icon{display: inline-block; color: rgba(255, 255, 255); cursor: pointer; font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 40}
+#gnb .login_icon{display: block; color: rgba(255, 255, 255, 0.8); font-size: 32px; font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 40}
+
+
+.wrap{
+    margin:20px auto;
+    text-align: center;
+}
+ul{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.title_wrap, .release_date_wrap, .country_wrap, .ganre_wrap, .runtime_wrap{
+    display:flex;
+   
+}
+
+.info_wrap >dl{
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    line-height: 20px;
+    padding: 14px 0px;
+    border-bottom: 1px solid rgb(240, 240, 240);
+    margin: 0px;
+}
+
+.info_wrap >dl >dt{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-left:100px;
+}
+.info_wrap >dl >dd{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-left:100px;
+}
+
+.overview_wrap >dt {
+    
+    text-align:left;
+    /* border:#045fd4 1px solid; */
+}
+.overview_wrap >dd {
+   /*  border:red 1px solid; */
+    padding:10px;
+    width:1170px;
+    height:80px;
+    
+}
+
+/* footer */
+/* 공통 */
+#footer{background-color: #1c1d1f; color: #a5a5a7;}
+#footer .inner{padding: 30px 0;}
+#footer .wrap{display: flex; justify-content: space-between;}
+#footer_gnb{display: flex;}
+#footer_gnb>li{position: relative;}
+#footer_gnb>li:nth-of-type(even){margin: 0 20px;}
+#footer_gnb>li::after{
+    content: ''; display: block; position: absolute;
+    right: -10px; top: 50%; transform: translateY(-50%); width: 1px; height: 80%;background-color: #a5a5a7;
+}
+#footer_gnb>li:last-of-type::after{content: none;}
+#footer_gnb>li>a{display: block; font-size: 14px; color: #a5a5a7;}
+#footer .box .info{margin-top: 10px; font: 14px/22px 'inherit';}
+#footer .box .info>p>a{display: inline-block; font: bold 16px 'inherit'; color: #a5a5a7;}
+#footer .box .info>p:last-of-type{margin-top: 10px;}
+/* sns */
+#footer .sns{display: flex; align-items: flex-end; height: 100%;}
+#footer .sns>li{margin: 0 5px; width: 35px; height: 35px; border: 1px solid #a5a5a7; border-radius: 100%; overflow: hidden;}
+#footer .sns>li>a{display: block; font: 20px/37px 'inherit'; text-align: center; color: #a5a5a7; transition: 0.2s;}
+#footer .sns>li>a:hover{color: #1c1d1f; background-color: #a5a5a7; transition: 0.2s;}
+
+
+
+

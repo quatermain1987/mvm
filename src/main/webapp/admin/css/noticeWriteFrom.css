@@ -1,0 +1,64 @@
+@charset "UTF-8";
+#admin{padding: 0;}
+#admin .wrap{ display: flex; height: 600px;}
+#admin .lnb_wrap{padding: 50px; width: 25%;}
+#admin .box{width: calc(100% - 25%); height: 100vh;}
+#admin #lnb li{padding: 20px 0; border-radius: 10px;}
+#admin #lnb li:hover{background-color: #B983FF;}
+#admin .box{padding: 70px; text-align: center;}
+
+#subject {
+	width: 500px;
+	height: 32px;
+	font-size: 12px;
+	border: 0;
+	border-radius: 15px;
+	outline: none;
+	padding-left: 10px;
+	background-color: rgb(233, 233, 233);
+}
+
+#content {
+	width: 500px;
+	height: 170px;
+	padding: 15px;
+	font-size: 12px;
+	border: 0;
+	border-radius: 15px;
+	outline: none;
+	padding-left: 10px;
+	background-color: rgb(233, 233, 233);
+}
+
+.form div {
+	margin: 10px 0;
+}
+
+button{
+    padding: 0px 10px;
+    border-radius: 20px;
+    background-color: #8e8787;
+    color: var(--white-color);
+    border-style: none;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    height: 25px;
+    width: 60px;
+}
+button:hover{
+	background-color: #B983FF;
+}
+button a{color: white;}
+
+#delete_pro{
+	width:300px;
+    height:300px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-150px;
+    margin-top:-150px;
+    text-align: center;
+}
+#delete_pro div{
+	margin-bottom: 15px;
+}

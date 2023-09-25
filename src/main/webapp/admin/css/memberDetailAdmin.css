@@ -1,0 +1,101 @@
+*{margin: 0; padding: 0; box-sizing: border-box; color: #fff;}
+*::before,*::after{margin: 0; padding: 0; box-sizing: border-box;}
+ul,ol,li{list-style: none;}
+a{text-decoration: none;}
+.content{width:100%; padding: 70px 0;}
+.content .wrap{display: flex; flex-flow: row wrap; justify-content: space-between;}
+.inner{width: 1170px; margin: 0 auto;}
+body{background-color: rgba(2, 4, 10);}
+@media screen and (max-width: 1200px){
+    .content{padding: 120px 40px;}
+    .inner{width: 100%;}
+}
+@media screen and (max-width: 768px){
+    .content{padding: 80px 40px;}
+}
+@media screen and (max-width: 640px){
+    .content{padding: 60px 20px;}
+}
+
+/* 전체를 감싸고 있는 영역 */
+#wrapper{position: relative; display: flex; padding: 0;}
+
+/* 사이드바 */
+#sidenav{position: fixed; left: 0; top: 0; z-index: 1; padding: 0; width: 20vw; height: 100%; border-right: 1px solid #2e3130; overflow-x: hidden;}
+#sidenav .inner{position: relative; padding: 30px; width: 100%; height: 100%;}
+#sidenav .lnb{width: 100%;}
+#sidenav .lnb>li{margin: 10px 0;}
+#sidenav .lnb>li:first-of-type{margin-top: 0;}
+#sidenav .lnb>li>a{display: flex; align-items: center; font-size: 15px; line-height: 35px; color: #B8BBBC;}
+#sidenav .lnb>li>a> .menu_icon{margin-right: 15px; width: 20px; height: 20px; filter: invert(76%) sepia(7%) saturate(18%) hue-rotate(149deg) brightness(99%) contrast(87%);}
+#sidenav .lnb>li>a img{display: block; width: 100%;}
+#sidenav .account{position: absolute; bottom: 0; left: 0; padding: 0 20px; width: 100%; height: 60px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #2e3130;}
+#sidenav .account .exit_btn{width: 25px; height: 25px; background-color: transparent; border: 0; filter: invert(76%) sepia(7%) saturate(18%) hue-rotate(149deg) brightness(99%) contrast(87%);}
+#sidenav .exit_btn .exit_icon>img{display: block; width: 100%; height: 100%;}
+#sidenav .logo{font-size: 32px; font-weight: bold; color: #fff; text-align: left;}
+#sidenav .login{display: block; width: 35px; height: 35px;}
+#sidenav .login_icon{display: block; width: 100%; filter: invert(100%) sepia(1%) saturate(7417%) hue-rotate(100deg) brightness(100%) contrast(101%);}
+.mymenu{position: relative;}
+.mymenu .mymenu_btn{border: 0; background-color: transparent;}
+.mymenu .mymenu_btn .mymenu_pic{width: 35px; height: 35px; border-radius: 100%; overflow: hidden;}
+.mymenu .mymenu_btn .mymenu_pic > img{display: block; width: 100%;}
+.mymenu .mymenu_sub{display: none; position: absolute; right: 0; top: 38px; width: 150px; background-color: #1c1d1f; border-radius: 5px; transition: 0.3s;}
+.mymenu_sub>ul>li{position: relative; margin-bottom: 5px;}
+.mymenu_sub>ul>li:hover{background-color: #2f2f2f;}
+.mymenu_sub>ul>li:first-of-type{margin-top: 3px;}
+.mymenu_sub>ul>li:last-of-type::after{content: none;}
+.mymenu_sub>ul>li>a{display: block; font-size: 14px; line-height: 38px; color: #ffffffec; text-indent: 20px;}
+
+
+/* 본문영영 */
+#user_detail{margin-left: 20vw;} 
+#user_detail .inner{padding: 0 30px; width: 1100px;}
+#user_detail .wrap{margin: 0 auto; width: 400px;}
+#userdetailForm{ display: flex; flex-flow: column wrap;}
+/* 입력란 */
+.row{margin-bottom: 20px;}
+.row input{display: block; margin: 3px 0; padding: 3px 10px; width: 100%; height: 45px; border: none; border-radius: 5px; background-color: #2f2f2f; color: #fff; text-align: center;}
+.row input:active{outline: 0;}
+.row input:focus{outline: 1px solid #B983FF;}
+.row input::placeholder{color: #888;}
+.row input[type="file"]:focus{outline: 0;}
+.row input.req{outline: 1px solid #B983FF;}
+/* tip 공통 */
+.tip{display: flex; justify-content: flex-start; align-items: center; width:100%; filter: invert(76%) sepia(1%) saturate(534%) hue-rotate(30deg) brightness(87%) contrast(90%);}
+.tip .tip_icon{margin-right: 2px; width: 16px; height: 16px;}
+.tip .tip_icon img{display: block; width: 100%; height: 100%;}
+.tip .tip_text{width: 100%; font-size: 13px; color: #2f2f2f;}
+.tip.alert{filter: invert(19%) sepia(79%) saturate(2605%) hue-rotate(344deg) brightness(111%) contrast(100%);}
+.tip.check{filter: invert(54%) sepia(92%) saturate(3571%) hue-rotate(115deg) brightness(104%) contrast(101%);}
+.tip.alert > .tip_text{color: #BD0013;}
+
+#user_pic{display: none;}
+.picRow{margin-bottom: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.picRow .pic{width: 120px; height: 120px; border-radius: 100%; overflow: hidden;}
+.picRow .pic img{display: block; width: 100%;}
+.changebtn{position: relative; margin-right: 5px;font-size: 14px; border: 0; border-radius: 20px; background-color: transparent; color: #888;}
+.changebtn::after{content: ''; display: block; position: absolute; right: -5px; top: 50%; transform: translateY(-50%);  width: 1px; height: 70%; background-color: #8888886a;}
+.pic{position: relative; width: 100%;}
+.pic::after{content: ''; display: block; position: absolute; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; background-color: #00000061; transition: 0.2s;}
+.picbtnwrap{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: 2;}
+.pic:hover::after{background-color: #0000009d; transition: 0.2s;}
+
+label{font-size: 13px; color: #888;}
+
+.othersRow{margin-top: 20px; position: relative; display: flex; justify-content: space-between; align-items: center;}
+.othersRow::after{content: ''; display: block; position: absolute; left: 0; top: -15px; width: 100%; height: 1px; background-color: #2e3130;}
+.othersRow .box{width: 31.333%;}
+
+#user_status, #user_logincount, #user_reportcount{width: 100%; height: 45px; line-height: 45px; background-color: #2f2f2f; color: #fff; border: none; border-radius: 5px; cursor: pointer;}
+#user_status{margin-top: 2px; border: none; border-radius: 5px; background-color: #2f2f2f; color: #fff; text-align: center;}
+#user_status:focus{outline: 1px solid #B983FF;}
+
+#picChangebtn{background-color: transparent; border: 0; filter: invert(100%) sepia(1%) saturate(7417%) hue-rotate(100deg) brightness(100%) contrast(101%); cursor: pointer;}
+#picChangebtn img{width: 25px; height: 25px;}
+/* 취소, 완료버튼 */
+.btnwrap{display: flex; justify-content: space-between;}
+#cancelbtn, #confirmbtn{width: 48.5%; height: 45px; color: #fff; font-weight: 600; border: none; border-radius: 5px; cursor: pointer;}
+#cancelbtn{background-color: #2e3130;}
+#confirmbtn{background-color: #B983FF;}
+
+

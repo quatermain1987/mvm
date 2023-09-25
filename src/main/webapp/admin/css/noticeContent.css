@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+
+/* 메인 아티클 */
+main .inner {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.h1{
+    margin-bottom: 12px;
+    padding-left: 4px;
+}
+.h1>a {
+    font-size: 20px;
+}
+
+.h2 {
+    font-size: 16px;
+    padding-left: 4px;
+}
+
+.tb_wrap {
+    border-top: 2px solid #999;
+    
+    padding-top: 10px;
+}
+
+.tb1 {
+    /*border: 1px solid blue;*/
+    border-collapse: collapse;
+
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.tb2_wrap{
+    border-top: 2px solid #999;
+    border-bottom: 2px solid #999;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.tb2 {
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+}
+.row1 {
+    border-bottom: 1px solid #ccc;
+    height: 40px;
+}
+.row2 {
+    height: 40px;
+}
+.col1 {
+    width: 10%;
+    font-weight: bold;
+    color: gray;
+}
+.col2 {
+    text-align: left;
+    padding-left: 28px;
+    font-size: 14px;
+}
+
+.col_line>div{
+    width: 1px;
+    height: 88%;
+    background-color: #ccc;
+}
+
+#notice {
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    min-height: 300px;
+    padding: 20px;
+    margin-top: 18px;
+    text-align: left;
+    padding: 40px;
+    margin-bottom: 4px;
+}
+
+.tb2 td {
+    padding-left: 8px;
+}
+
+
+
+
+
+
+/* 버튼 */
+
+.btn{
+    
+    margin: 6px;
+    padding: 0.5rem 1rem;
+    
+    float: right;
+    position: relative;
+    
+    border: 1px solid #8e8787;
+    border-radius: 15px;
+
+    background-color: #8e8787;
+    color: #fff;
+
+    cursor: pointer;
+    
+}
+.btn:hover{
+	background-color: #B983FF;
+}

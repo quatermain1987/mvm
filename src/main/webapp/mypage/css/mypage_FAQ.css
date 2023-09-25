@@ -1,0 +1,146 @@
+/*
+작성자 : 박성민
+작성일 : 2023년 1~4월
+전달사항 : 헤더랑 푸터 부분 css만 삭제하였습니다.
+			남은 구성은 : '컨테이너2분할', '사이드바', '메인_본문'(답변블록2개), '탭메뉴', '토글메뉴', '스크롤상단이동버튼' 입니다.
+*/
+
+
+:root{
+    /* 색상 */
+    --white-color:#fff;
+    --black-color:#140a00;
+    --blue-color:#045fd4;
+    --red-color:#ff0000;
+    --gray-dark-color:#D9D9D9;
+    --gray-light-color:#F4F4F4;
+
+    /* 사이즈 */
+    --padding: 12px;
+    --avatar-size:50px;
+    
+    /* 폰트사이즈*/
+    --font-large: 18px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-micro: 10px;
+}
+
+/*메인_본문(여기서부터 쭉 본문입니다.)*/
+
+/*끔찍한 질문블록*/
+.blocks_list {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: var(--padding);
+}
+.blocks_item {
+    background: #1c1d1f;
+    border: 1px solid var(--gray-dark-color);
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: flex;
+    flex: 100%;
+    max-width: 50%; /*한줄당 블럭개수 조정*/
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 2px;
+    width: 100%; height: 100%;
+}
+.blocks_item_link{
+    width: 100%; height: 100%;
+    font-size: var(--font-large);
+    text-align: center;
+    line-height: 60px;
+}
+
+/*호러블테러블 답변블록*/
+.faq_answer_list {
+    border: 0.1px solid #a5a5a5;
+    border-radius: 5px;
+    padding: var(--padding) 6px;
+    margin: var(--padding) 0;
+    box-shadow: 0 0 2px;;
+    background-color: #1c1d1f;
+}
+.faq_answer_list> div {
+    padding: var(--padding);
+}
+.faq_answer_list> li {
+    padding: var(--padding);
+    display: flex;
+    justify-content: space-between;
+}
+.faq_answer_list> li>button {
+    border: none;
+    background: none;
+}
+.faq_answer_list> li>button>i {
+    font-size: calc(var(--font-large)*1.5);
+    padding-right: var(--padding);
+    color: gray;
+}
+
+/*탭메뉴*/
+.blocks_item> .selected{
+    background: linear-gradient(to right, #9198e5, #B983FF);
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+/* js 토글메뉴 */
+.faq_answer_list_answer {
+    display: none;
+}
+.seebtn {
+    display: block;
+}
+.seebtn_angle {
+    transform: rotate(180deg);
+}
+.faq_last {
+    padding: 12px 0;
+    margin: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.faq_nomore {
+    padding: var(--padding);
+}
+.faq_btn {
+    padding: 10px 15px;
+    background-color:black;
+    color:#fff; 
+    font-size: 13px;
+    border: 1px solid #a5a5a7;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+/*난리난 호버 왜 버튼안에 after안되는데?*/
+.faq_btn:hover {
+    background: linear-gradient(to right, #9198e5, #B983FF);
+}
+
+
+/* 스크롤 상단 이동 버튼 */
+.scroll_btn {
+    top: 88vh;
+    left: 90vw;
+    width: 50px;
+    height: 50px;
+    border-radius: 80%;
+    background-color: rgba(150, 150, 150, 0.4);
+    border: none;
+    position: fixed;
+    z-index: 2;
+    }
+.fa-angle-up {
+    color: rgba(245, 245, 245, 0.8);
+    font-size: 22px;
+}
+.fa-angle-up:active {
+    position: relative;
+    top:3px;
+}

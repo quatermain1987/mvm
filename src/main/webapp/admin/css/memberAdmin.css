@@ -1,0 +1,82 @@
+*{margin: 0; padding: 0; box-sizing: border-box; color: #fff;}
+*::before,*::after{margin: 0; padding: 0; box-sizing: border-box;}
+ul,ol,li{list-style: none;}
+a{text-decoration: none;}
+.content{width:100%; padding: 70px 0;}
+.content .wrap{display: flex; flex-flow: row wrap; justify-content: space-between;}
+.inner{width: 1170px; margin: 0 auto;}
+body{background-color: rgba(2, 4, 10);}
+@media screen and (max-width: 1200px){
+    .content{padding: 120px 40px;}
+    .inner{width: 100%;}
+}
+@media screen and (max-width: 768px){
+    .content{padding: 80px 40px;}
+}
+@media screen and (max-width: 640px){
+    .content{padding: 60px 20px;}
+}
+
+/* 전체를 감싸고 있는 영역 */
+#wrapper{position: relative; display: flex; padding: 0;}
+
+/* 사이드바 */
+#sidenav{position: fixed; left: 0; top: 0; z-index: 1; padding: 0; width: 20vw; height: 100%; border-right: 1px solid #2e3130; overflow-x: hidden;}
+#sidenav .inner{position: relative; padding: 30px; width: 100%; height: 100%;}
+#sidenav .lnb{width: 100%;}
+#sidenav .lnb>li{margin: 10px 0;}
+#sidenav .lnb>li:first-of-type{margin-top: 0;}
+#sidenav .lnb>li>a{display: flex; align-items: center; font-size: 15px; line-height: 35px; color: #B8BBBC;}
+#sidenav .lnb>li>a> .menu_icon{margin-right: 15px; width: 20px; height: 20px; filter: invert(76%) sepia(7%) saturate(18%) hue-rotate(149deg) brightness(99%) contrast(87%);}
+#sidenav .lnb>li>a img{display: block; width: 100%;}
+#sidenav .account{position: absolute; bottom: 0; left: 0; padding: 0 20px; width: 100%; height: 60px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #2e3130;}
+#sidenav .account .exit_btn{width: 25px; height: 25px; background-color: transparent; border: 0; filter: invert(76%) sepia(7%) saturate(18%) hue-rotate(149deg) brightness(99%) contrast(87%);}
+#sidenav .exit_btn .exit_icon>img{display: block; width: 100%; height: 100%;}
+#sidenav .logo{font-size: 32px; font-weight: bold; color: #fff; text-align: left;}
+#sidenav .login{display: block; width: 35px; height: 35px;}
+#sidenav .login_icon{display: block; width: 100%; filter: invert(100%) sepia(1%) saturate(7417%) hue-rotate(100deg) brightness(100%) contrast(101%);}
+
+
+/* 본문영영 */
+#user_list{margin-left: 20vw;} 
+#user_list .inner{width: 1100px;}
+#user_list .wrap{padding: 0 30px;}
+#user_list .top{display: flex; justify-content: space-between; align-items: center; }
+#user_list .top>a{display: block; width: 80px; font-size: 14px; line-height: 35px; border-radius: 5px;  background-color: #B983FF; text-align: center;}
+#user_list .title{padding-left: 30px; font-size: 24px; text-align: left;}
+#user_list .wrap{display: flex; flex-direction: column; justify-content: center; }
+#user_list .categories{display: flex;}
+#user_list .categories>li{font-size: 15px; color: #b8bbbc;}
+
+#user_list ul>li{color: #b8bbbc; padding-left: 20px; font-size: 15px; line-height: 3; text-align: left; border-bottom: 1px solid #2e3130;}
+#user_list ul>li:first-of-type{padding: 0; width: 100px; text-align: center;}
+#user_list ul>li:nth-of-type(2){width: 130px;}
+#user_list ul>li:nth-of-type(3){width: 170px;}
+#user_list ul>li:nth-of-type(4){width: 250px;}
+#user_list ul>li:nth-of-type(5){padding: 0; width: 100px; text-align: center;}
+#user_list ul>li:nth-of-type(6){width: 130px;}
+#user_list ul>li:last-of-type{width: 130px;}
+#user_list .table{margin: 40px 0;}
+#user_list .userinfo{display: flex; cursor: pointer;}
+#user_list .userinfo>li:last-of-type{position: relative; padding-left: 35px;}
+#user_list .userinfo>li:last-of-type::after{content: ''; display: block; position: absolute; left: 20px; top: 50%; transform: translateY(-50%); width: 6px; height: 6px; border-radius: 100%; background-color: chartreuse;}
+#user_list .userinfo>li.status0:last-of-type::after{background-color: #b8bbbc;}
+#user_list .userinfo>li.status-1:last-of-type::after{background-color:red;}
+#user_list .userinfo:hover li{color: #fff;}
+#user_list .pagenation{display: flex; justify-content: center; align-items: center;}
+#user_list .pagenation>a{display: block; width: 20px; height: 20px; font-size: 18px; text-align: center;}
+.nexticon, .previcon{filter: invert(100%) sepia(91%) saturate(3%) hue-rotate(105deg) brightness(109%) contrast(98%);}
+.nexticon img, .previcon img{display:block; width: 100%;}
+#user_list .not_exist{position: relative; width: 100%; height: 460px;}
+#user_list .not_exist>p{position:absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); color:#b8bbbc; text-align:center;}
+
+#searchForm{display: flex; align-items: center;}
+#searchOption{background-color: #2f2f2f; width: 100px; height: 35px; margin-right: 5px; padding-left: 3px; border-radius: 5px; border: 0;}
+#searchOption:focus{outline: 1px solid #B983FF;}
+.search_wrap{position: relative; background-color: #2f2f2f; width: 180px; height: 35px; background-color: #2f2f2f; border-radius: 5px;}
+.search_wrap.focusin{outline: 1px solid #B983FF;}
+#searchText{display: block; margin: 3px 0; padding: 3px 10px; width: 153px; height: 32px; border: none; background-color: transparent; color: #fff;}
+#searchText:active{outline: none;}
+#searchText:focus{outline: none;}
+#searchText::placeholder{color: #888;}
+#searchBtn{position: absolute; right: 8px; top: 50%; transform: translateY(-50%); z-index: 5; width: 24px; height: 24px; background-color: transparent; border: 0; filter: invert(100%) sepia(91%) saturate(3%) hue-rotate(105deg) brightness(109%) contrast(98%);}

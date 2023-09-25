@@ -1,0 +1,157 @@
+section>section
+{
+	margin-bottom: 50px;
+}
+
+.summary_container
+{
+	/*border: 10px solid red;*/
+	display: flex;
+	justify-content: flex-start;
+    align-items: center;
+	background-color: var(--thema-light-gray-color);
+	box-shadow: var(--thema-box-shadow);
+	border-radius: 10px;
+	height: 150px;
+}
+.summary_container > div
+{
+	/* border: 10px solid red; */
+	width: 100px;
+	margin:40px;
+	text-align: center;    
+}
+.summary_container > div > .achievements_total_sum, .achievements_total_rate
+{
+	/*border: 10px solid red;*/
+	font-size: 60px;
+	font-weight: bolder;
+}
+.summary_container > div> .achievements_total_rate::after
+{
+	content:"%";
+	font-size: 30px;
+}
+
+.wrap_review {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    margin-top: 30px;
+    height: 350px;
+}
+.review_card {
+    background: var(--thema-light-gray-color);
+    border-radius: 10px;
+    width: 31.3%;
+    height:350px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    text-overflow: ellipsis;
+    margin-bottom: 30px;
+}
+.review_card:nth-child(3n+2) {
+    margin:0 3%;
+}
+.review_card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.02);
+}
+.user_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.user_picture {
+    border: 1px solid var(--black-color);
+    width:var(--avatar-size);
+    height:var(--avatar-size);
+    border-radius:50%;
+    position: relative;
+    top:5px; left: 7px;
+}
+.nickname {
+    position: relative;
+    top: -16px; left:10px;
+}
+.grade_wrap {
+    display: flex;
+    justify-content: space-between;
+    padding:5px 0; margin: 3px 20px;
+    width: 90%
+}
+.dropdown {
+    display: inline-block;
+}
+
+.more> i {
+    margin-right: 15px;
+    font-size: var(--font-large);
+}
+.more {
+    display: inline-block;
+    border: none;
+}
+.submenu {
+    display: none;
+    border: 0.5px solid var(--gray-dark-color);
+    border-radius: 5px;
+    background: var(--white-color);
+    font-size: var(--font-medium);
+    padding: 10px; color: var(--black-color);
+}
+.modi.active, .del.active {
+    display: block;
+}
+
+.star {
+    border-radius: 30px;
+    background-color: #3d3d3d;
+    padding: 1px 5px;
+    font-size: var(--font-medium);
+    color:var(--white-color);
+}
+.fa-star:before {
+    content: "\f005";
+}
+.content_wrap {
+    align-self: center;
+    margin: 5px 20px;
+    width: 85%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 9; /*리뷰 글 9줄 제한*/
+    overflow: hidden;
+    color:lightgray;
+}
+.bottom_wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: auto; margin-top: auto;
+    margin-left: 20px; margin-right: 20px;
+}
+
+.review_container{
+	width:100%;
+    background: var(--thema-gray-color);
+    border-radius: 10px;
+    padding-top:100px;
+    text-align: center;
+}
+
+.likeWrap{width: 100%; overflow: hidden; }
+.likebox{    margin-bottom: 5px;
+    width: 100px;
+    height: 100px;
+    app-region: none;
+    border-radius: 8px;
+    background-color: var(--thema-light-gray-color);
+    border-width: 0px;
+    box-shadow: var(--thema-box-shadow);}
+.icon{width: 40px;  margin: auto }
+.icon_title{font: 13px 'inherit'; color: white;}
+.icon img{display: block; width: 100%; filter:invert(1)}
+
